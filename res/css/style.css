@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    height: 6.5rem;
+    width: 100%;
+    background-image: linear-gradient(to right, #3a5e89, #64bbe8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 5rem;
+    margin-left: 30rem;
+}
+
+nav ul {
+    margin-right: 30rem;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 0.7rem;
+    display: inline-block;
+}
+
+nav ul li a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #bce7f8;
+}
+
+
+.page {
+    background-color: black;
+}
+
+
+
+/* Hero Section */
+#hero div h1 {
+    color: black;
+    display: block;
+}
