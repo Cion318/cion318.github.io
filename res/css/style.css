@@ -6,17 +6,15 @@
 html, body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 /* Navbar Settings -------------------------------------------------*/
-.navbar {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    
-    /*background-image: radial-gradient(circle at center, #64bbe8, #3a5e89);*/
-}
 .navbar-brand img {
-    height: 3rem;
+    height: 2.5rem;
+}
+.navbar-toggler-icon {
+    font-size: 0.8rem;
 }
 .navbar-nav a {
     font-size: 1rem;
@@ -25,40 +23,74 @@ html, body {
 /* Hero Settings ---------------------------------------------------*/
 .hero {
     min-height: 20rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.hero img {
-    width: 100%;
-    position: relative;
-    display: none;
-}
-
-.hero .overlay {
-    position: absolute;
-    top: 10rem;
-    left: 3rem;
-    padding: 0;
-    font-weight: bold;
-    text-align: left;
-    color: black;
-}
-
-.hero .overlay mark {
+.hero mark {
     color: #64bbe8;
     background-color: transparent;
+}
+
+/* Skills Settings -------------------------------------------------*/
+.skills {
+    background: #343a40;
+    clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    color: white;
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.carousel-inner {
+    background-color: #343a40;
+}
+
+.skills-wrapper {
+    padding: 1rem;
+}
+.skill-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;  
+    padding: 1rem 4rem;
+}
+
+.skill-list i {
+    font-size: 2rem;
+}
+.skill-list p {
+    padding: 1rem 0;
+}
+
+/* Projects Settings -----------------------------------------------*/
+.projects {
+    text-align: center;
+    padding: 2rem 1rem 3rem 1rem;
+}
+
+/* Contact Settings ------------------------------------------------*/
+.contact {
+    background: #343a40;
+    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+    text-align: center;
+    color: #fff;
+    padding: 4rem 0 2rem 0;
+}
+.contact .form-item {
+    padding: 1rem;
+}
+.contact .btn {
+    font-weight: bold;
+    background-color: #64bbe8;
+    border-color: #64bbe8;
 }
 
 
 /* Media Settings --------------------------------------------------*/
 @media (min-width: 576px) {
-    .navbar {
-        padding-right: 2rem;
-        padding-left: 2rem;
-    }
-    .hero img {
-        display: none;
-    }
-    .hero .overlay {
-        top: 10rem;
+    .hero h1{
+        font-size: 2.5rem;
     }
 }
 @media (min-width: 768px) {
