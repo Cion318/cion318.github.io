@@ -58,9 +58,10 @@ html, body {
     padding: 1rem 4rem;
 }
 
+.skill-list .ith-skill {
+    padding: 1rem;
+}
 .skill-list i {
-    padding-left: 1rem;
-    padding-right: 1rem;
     font-size: 2rem;
 }
 .skill-list p {
