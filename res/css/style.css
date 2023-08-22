@@ -22,7 +22,7 @@ html, body {
 
 /* Hero Settings ---------------------------------------------------*/
 .hero {
-    min-height: 20rem;
+    min-height: 30rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
