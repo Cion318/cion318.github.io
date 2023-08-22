@@ -10,10 +10,6 @@ html, body {
     overflow-x: hidden;
 }
 
-h1 {
-    padding: 1rem;
-}
-
 .hero, .skills, .projects, .contact {
     min-height: 32rem;
     display: flex;
