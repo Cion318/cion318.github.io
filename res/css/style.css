@@ -59,6 +59,8 @@ html, body {
 }
 
 .skill-list i {
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 2rem;
 }
 .skill-list p {
