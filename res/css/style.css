@@ -3,10 +3,32 @@
     margin: 0;
     padding: 0;
 }
+
 html, body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+.hero, .skills, .projects, .contact {
+    min-height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills, .projects, .contact {
+    text-align: center;
+}
+
+.skills, .contact {
+    background: #343a40;
+    color: #fff;
+    padding: 4rem 0 2rem 0;
 }
 
 /* Navbar Settings -------------------------------------------------*/
@@ -21,12 +43,6 @@ html, body {
 }
 
 /* Hero Settings ---------------------------------------------------*/
-.hero {
-    min-height: 32rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
 .hero mark {
     color: #64bbe8;
     background-color: transparent;
@@ -34,59 +50,37 @@ html, body {
 
 /* Skills Settings -------------------------------------------------*/
 .skills {
-    min-height: 32rem;
-    background: #343a40;
     clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-    color: white;
-    text-align: center;
-    padding: 4rem 0 2rem 0;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.skills h3 {
-    padding: 1rem;
 }
 .skills-wrapper {
     padding: 2rem;
 }
+
 .skill-list {
     display: flex;
     justify-content: space-around;
-    text-align: center;
-    color: white;  
-    padding: 1rem 4rem;
+    color: #fff;  
+    padding: 1rem;
 }
 
 .skill-list .ith-skill {
     padding: 1rem;
 }
 .skill-list i {
-    font-size: 2rem;
-}
-.skill-list p {
-    padding: 1rem 0;
+    font-size: 2.5rem;
 }
 
 /* Projects Settings -----------------------------------------------*/
 .projects {
-    min-height: 32rem;
-    text-align: center;
-    padding: 2rem 1rem 3rem 1rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 0 1rem;
 }
 .projects h1 {
     padding: 1rem;
 }
+
 /* Contact Settings ------------------------------------------------*/
 .contact {
-    background: #343a40;
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
-    text-align: center;
-    color: #fff;
-    padding: 4rem 0 2rem 0;
 }
 .contact .form-item {
     padding: 1rem;
@@ -95,109 +89,4 @@ html, body {
     font-weight: bold;
     background-color: #64bbe8;
     border-color: #64bbe8;
-}
-
-
-/* Media Settings --------------------------------------------------*/
-@media (min-width: 576px) {
-    .hero h1{
-        font-size: 2.5rem;
-    }
-}
-@media (min-width: 768px) {
-    .navbar {
-        padding-right: 4rem;
-        padding-left: 4rem;
-    }
-    .hero .overlay {
-        top: 10rem;
-        left: 5rem;
-    }
-    .hero .overlay h1 {
-        font-size: 2.5rem;
-    }
-}
-@media (min-width: 992px) {
-    .navbar {
-        padding-right: 6rem;
-        padding-left: 6rem;
-    }
-    .hero img {
-        display:block;
-    }
-    .hero .overlay {
-        top: 12.5rem;
-        left: 7rem;
-        color: white;
-    }
-    .hero .overlay h1 {
-        font-size: 2.5rem;
-    }
-}
-@media (min-width: 1200px) {
-    .navbar {
-        padding-right: 8rem;
-        padding-left: 8rem;
-    }
-    .hero .overlay {
-        top: 15rem;
-        left: 9rem;
-    }
-    .hero .overlay h1 {
-        font-size: 3.5rem;
-    }
-}
-@media (min-width: 1400px) {
-    .navbar {
-        padding-right: 10rem;
-        padding-left: 10rem;
-    }
-    .hero .overlay {
-        top: 10rem;
-        left: 11rem;
-    }
-    .hero .overlay h1 {
-        font-size: 4rem;
-    }
-}
-
-@media (min-width: 1600px) {
-    .navbar {
-        padding-right: 10rem;
-        padding-left: 10rem;
-    }
-    .hero .overlay {
-        top: 10rem;
-        left: 11rem;
-    }
-    .hero .overlay h1 {
-        font-size: 4rem;
-    }
-}
-
-@media (min-width: 1920px) {
-    .navbar {
-        padding-right: 10rem;
-        padding-left: 10rem;
-    }
-    .hero .overlay {
-        top: 10rem;
-        left: 11rem;
-    }
-    .hero .overlay h1 {
-        font-size: 4rem;
-    }
-}
-@media (min-width: 2560px) {
-    .navbar {
-        padding-right: 10rem;
-        padding-left: 10rem;
-    }
-    .hero .overlay {
-        top: 10rem;
-        left: 11rem;
-    }
-    .hero .overlay h1 {
-        font-size: 4rem;
-    }
 }
