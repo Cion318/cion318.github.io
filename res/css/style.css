@@ -22,7 +22,7 @@ html, body {
 
 /* Hero Settings ---------------------------------------------------*/
 .hero {
-    min-height: 35rem;
+    min-height: 32rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -34,19 +34,21 @@ html, body {
 
 /* Skills Settings -------------------------------------------------*/
 .skills {
+    min-height: 32rem;
     background: #343a40;
     clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
     color: white;
     text-align: center;
     padding: 4rem 0 2rem 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-.carousel-inner {
-    background-color: #343a40;
-}
-
-.skills-wrapper {
+.skills h3 {
     padding: 1rem;
+}
+.skills-wrapper {
+    padding: 2rem;
 }
 .skill-list {
     display: flex;
@@ -65,10 +67,16 @@ html, body {
 
 /* Projects Settings -----------------------------------------------*/
 .projects {
+    min-height: 32rem;
     text-align: center;
     padding: 2rem 1rem 3rem 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
+.projects h1 {
+    padding: 1rem;
+}
 /* Contact Settings ------------------------------------------------*/
 .contact {
     background: #343a40;
