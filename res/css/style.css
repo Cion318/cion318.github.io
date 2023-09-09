@@ -1,4 +1,5 @@
-/* Global Settings -------------------------------------------------*/
+/* Old Setting */
+/* Global Settings -------------------------------------------------
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +29,7 @@ html, body {
     padding: 4rem 0 2rem 0;
 }
 
-/* Navbar Settings -------------------------------------------------*/
+/* Navbar Settings -------------------------------------------------
 .navbar-brand img {
     height: 2.5rem;
 }
@@ -38,14 +39,16 @@ html, body {
 .navbar-nav a {
     font-size: 1rem;
 }
+.navbar-collapse {
+    z-index: 1001;
 
-/* Hero Settings ---------------------------------------------------*/
+/* Hero Settings ---------------------------------------------------
 .hero mark {
     color: #64bbe8;
     background-color: transparent;
 }
 
-/* Skills Settings -------------------------------------------------*/
+/* Skills Settings -------------------------------------------------
 .skills {
     clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 }
@@ -67,7 +70,7 @@ html, body {
     font-size: 2.5rem;
 }
 
-/* Projects Settings -----------------------------------------------*/
+/* Projects Settings -----------------------------------------------
 .projects {
     padding: 0 1rem;
 }
@@ -75,7 +78,7 @@ html, body {
     padding: 1rem;
 }
 
-/* Contact Settings ------------------------------------------------*/
+/* Contact Settings ------------------------------------------------
 .contact {
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
 }
@@ -87,3 +90,4 @@ html, body {
     background-color: #64bbe8;
     border-color: #64bbe8;
 }
+*/
