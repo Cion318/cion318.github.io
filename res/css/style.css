@@ -38,6 +38,29 @@ body {
   overflow-y: auto;
 }
 
+.back-section {
+  z-index: 1;
+}
+
+.section.active {
+  z-index: 2;
+  opacity: 1;
+  animation: slideSection 1s ease;
+}
+
+@keyframes slideSection {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
 .container {
   width: 100%;
   margin: auto;
@@ -88,10 +111,6 @@ body {
   margin: 0 -1rem;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .btn {
   font-size: 1rem;
   font-weight: 500;
@@ -108,7 +127,7 @@ body {
   border: 1px solid var(--skin-color);
 }
 
-/* ===== Navigation Bar Section ===== */
+/* ========== Navigation Bar Section ========== */
 nav {
   transition: all 0.3s ease;
 }
@@ -153,14 +172,14 @@ nav .logo a::after {
 }
 
 nav .nav-toggler {
-  height: 2rem;
+  height: 2.5rem;
   width: 2.5rem;
   border: 1px solid var(--skin-color);
   cursor: pointer;
   position: fixed;
-  right: 1rem;
-  top: 0.5rem;
-  border-radius: 5px;
+  right: 1.5rem;
+  top: 0.35rem;
+  border-radius: 0;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -238,7 +257,7 @@ nav .navbar-social ul li a:hover {
   color: var(--skin-color);
 }
 
-/* ===== Home Section ===== */
+/* ========== Home Section ========== */
 .home {
   min-height: 100vh;
   display: flex;
@@ -314,7 +333,7 @@ h3.my-profession {
   max-width: 80%;
 }
 
-/* ===== About Section ===== */
+/* ========== About Section ========== */
 .about .about-content .about-text h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -478,7 +497,7 @@ h3.my-profession {
   color: var(--text-dark-700);
 }
 
-/* ===== Portfolio Section ===== */
+/* ========== Portfolio Section ========== */
 .portfolio .container {
   padding-bottom: 2.5rem;
 }
@@ -531,7 +550,7 @@ h3.my-profession {
   color: var(--text-dark-700);
 }
 
-/* ===== Contact Section ===== */
+/* ========== Contact Section ========== */
 .contact-title {
   color: var(--skin-color);
   text-align: center;
