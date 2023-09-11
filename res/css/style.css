@@ -23,8 +23,52 @@ body {
   box-sizing: border-box;
 }
 
+.section {
+  width: 100%;
+  background-color: var(--bg-dark-900);
+  min-height: 100vh;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.section .container {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 -1rem;
+}
+
 .hidden {
   display: none !important;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  color: white;
+  border: none;
+  display: inline-block;
+  white-space: nowrap;
+  background-color: var(--skin-color);
+  transition: all 0.3s ease;
 }
 
 /* ===== Navigation Bar Section ===== */
@@ -155,4 +199,80 @@ nav .navbar-social ul li a {
 
 nav .navbar-social ul li a:hover {
   color: var(--skin-color);
+}
+
+/* ===== Home Section ===== */
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-dark-900);
+}
+
+.home .home-info {
+  padding-top: 0;
+}
+
+h3.hello {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+h3.hello span {
+  font-family: "Clicker Script", cursive;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--skin-color);
+}
+
+h3.my-profession {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.typing {
+  color: var(--skin-color);
+}
+
+.home-info p {
+  margin-bottom: 5rem;
+  font-size: 1.25rem;
+  color: var(--text-dark-700);
+}
+
+.home .home-img {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: none;
+}
+
+.home-img::before {
+  content: "";
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  border-top: 0.75rem solid var(--skin-color);
+  border-left: 0.75rem solid var(--skin-color);
+  left: 1.25rem;
+  top: -2.5rem;
+}
+
+.home-img::after {
+  content: "";
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  border-bottom: 0.75rem solid var(--skin-color);
+  border-right: 0.75rem solid var(--skin-color);
+  right: 1.25rem;
+  bottom: -2.5rem;
+}
+
+.home .home-img img {
+  margin: auto;
+  max-width: 80%;
 }
