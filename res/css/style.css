@@ -97,11 +97,15 @@ body {
   font-weight: 500;
   padding: 0.75rem 2rem;
   color: white;
-  border: none;
   display: inline-block;
   white-space: nowrap;
   background-color: var(--skin-color);
   transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--bg-dark-100);
+  border: 1px solid var(--skin-color);
 }
 
 /* ===== Navigation Bar Section ===== */
@@ -475,3 +479,56 @@ h3.my-profession {
 }
 
 /* ===== Portfolio Section ===== */
+.portfolio .container {
+  padding-bottom: 2.5rem;
+}
+
+.portfolio .portfolio-heading h2 {
+  color: var(--text-dark-900);
+  font-weight: 500;
+}
+
+.portfolio .portfolio-item {
+  margin-top: 2rem;
+  border: 1px solid var(--skin-color);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item:hover {
+  background-color: var(--bg-dark-100);
+}
+
+.portfolio .portfolio-item a {
+  text-decoration: none;
+}
+
+.portfolio .portfolio-item-inner {
+  border: 0.33rem solid var(--bg-black-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio-item-inner img {
+  width: 60%;
+}
+
+.portfolio .portfolio-item-inner h5 {
+  font-size: 1.5rem;
+  color: var(--text-dark-900);
+  font-weight: 600;
+}
+
+.portfolio .portfolio-item-inner p {
+  font-size: 1rem;
+  color: var(--text-dark-700);
+}
+
+/* ===== Contact Section ===== */
