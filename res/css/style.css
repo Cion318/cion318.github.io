@@ -532,3 +532,76 @@ h3.my-profession {
 }
 
 /* ===== Contact Section ===== */
+.contact-title {
+  color: var(--skin-color);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-sub-title {
+  color: var(--text-dark-900);
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+
+.contact .contact-info-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact .contact-info-item .icon {
+  display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa {
+  font-size: 1.5rem;
+  color: var(--skin-color);
+}
+
+.contact .contact-info-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark-900);
+  text-transform: capitalize;
+  margin: 1rem 0 0.33rem;
+}
+
+.contact .contact-info-item p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--text-dark-700);
+  font-weight: 400;
+}
+
+.contact .contact-form {
+  color: var(--text-dark-900);
+}
+
+.contact .contact-form .form-control {
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--bg-dark-100);
+  border: 1px solid var(--bg-dark-50);
+  font-size: 1rem;
+  color: var(--text-dark-700);
+  transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-control:focus {
+  border-color: var(--skin-color);
+  box-shadow: 0 0 1.25rem rgba(48, 46, 77, 0.15);
+}
+
+.contact .contact-form textarea {
+  height: 10rem;
+}
+
+.contact .contact-form .btn {
+  height: 3rem;
+  width: 100%;
+  padding: 0 3rem;
+}
