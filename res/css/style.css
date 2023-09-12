@@ -120,6 +120,7 @@ body {
   display: inline-block;
   white-space: nowrap;
   background-color: var(--skin-color);
+  border: 1px solid var(--skin-color);
   transition: all 0.3s ease;
 }
 
@@ -354,6 +355,7 @@ h3.my-profession {
 
 .about .about-content .personal-info {
   margin-top: 2.5rem;
+  padding-right: 4rem;
 }
 
 .about .about-content .personal-info .info-item p {
@@ -616,7 +618,7 @@ h3.my-profession {
 }
 
 .contact .contact-form .btn {
-  height: 3rem;
+  height: 2.5rem;
   width: 100%;
   padding: 0 3rem;
 }
@@ -713,5 +715,89 @@ h3.my-profession {
   }
   .home-img::after {
     right: 4.5rem;
+  }
+
+  .about .about-content {
+    padding: 0 4rem;
+  }
+
+  .about .about-content .personal-info {
+    padding-right: 4rem;
+  }
+
+  .about .about-content .skills {
+    padding-left: 4rem;
+  }
+
+  .about .about-content .education {
+    padding-right: 4rem;
+  }
+
+  .about .about-content .experience {
+    padding-left: 4rem;
+  }
+
+  .portfolio .portfolio-content {
+    padding: 0 3rem 3rem 3rem;
+  }
+
+  .contact .contact-form {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section-title {
+    padding: 0 5rem;
+  }
+
+  nav .logo {
+    padding-left: 4rem;
+  }
+
+  nav .navbar-nav {
+    padding-right: 4rem;
+  }
+
+  nav .navbar-social {
+    padding-right: 4rem;
+  }
+  .home .home-info {
+    padding: 0 5rem;
+  }
+  .home .home-img {
+    display: flex;
+    padding-right: 5rem;
+  }
+  .home-img::after {
+    right: 5.5rem;
+  }
+
+  .about .about-content {
+    padding: 0 5rem;
+  }
+
+  .about .about-content .personal-info {
+    padding-right: 5rem;
+  }
+
+  .about .about-content .skills {
+    padding-left: 5rem;
+  }
+
+  .about .about-content .education {
+    padding-right: 5rem;
+  }
+
+  .about .about-content .experience {
+    padding-left: 5rem;
+  }
+
+  .portfolio .portfolio-content {
+    padding: 0 4rem 3rem 4rem;
+  }
+
+  .contact .contact-form {
+    padding: 0 5rem;
   }
 }
