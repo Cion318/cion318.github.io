@@ -74,6 +74,7 @@ body {
 .section-title {
   margin-top: 2.5rem;
   margin-bottom: 4rem;
+  padding: 0 1.5rem;
 }
 
 .section-title h2 {
@@ -273,6 +274,7 @@ nav .navbar-social ul li a:hover {
 h3.hello {
   font-size: 2rem;
   margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 h3.hello span {
@@ -285,6 +287,7 @@ h3.hello span {
 h3.my-profession {
   font-size: 2rem;
   margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 .typing {
@@ -295,6 +298,7 @@ h3.my-profession {
   margin-bottom: 5rem;
   font-size: 1.25rem;
   color: var(--text-dark-700);
+  padding: 0 1rem;
 }
 
 .home .home-img {
@@ -333,12 +337,17 @@ h3.my-profession {
   max-width: 80%;
 }
 
+.home .home-info .about-me {
+  margin: 0 1rem;
+}
+
 /* ========== About Section ========== */
 .about .about-content .about-text h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
   color: var(--text-dark-900);
+  padding: 0 1rem;
 }
 
 .about .about-content .about-text h3 span {
@@ -349,10 +358,12 @@ h3.my-profession {
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--text-dark-700);
+  padding: 0 1rem;
 }
 
 .about .about-content .personal-info {
   margin-top: 2.5rem;
+  padding: 0 2rem;
 }
 
 .about .about-content .personal-info .info-item p {
@@ -376,10 +387,12 @@ h3.my-profession {
 
 .about .about-content .personal-info .buttons .btn {
   margin-right: 1rem;
+  padding: 1rem;
 }
 
 .about .about-content .skills {
   margin-top: 2.5rem;
+  padding: 0 2rem;
 }
 
 .about .about-content .skills .skill-item {
@@ -424,6 +437,7 @@ h3.my-profession {
 .about .about-content .education,
 .about .about-content .experience {
   margin-top: 2rem;
+  padding: 0 2rem;
 }
 
 .about .about-content h3.title {
@@ -502,13 +516,13 @@ h3.my-profession {
   padding-bottom: 2.5rem;
 }
 
-.portfolio .portfolio-heading h2 {
-  color: var(--text-dark-900);
-  font-weight: 500;
+.portfolio .portfolio-item-container {
+  padding: 0.5rem;
 }
 
 .portfolio .portfolio-item {
-  margin-top: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
   border: 1px solid var(--skin-color);
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -520,13 +534,6 @@ h3.my-profession {
 
 .portfolio .portfolio-item a {
   text-decoration: none;
-}
-
-.portfolio .portfolio-item-inner {
-  border: 0.33rem solid var(--bg-black-100);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  cursor: pointer;
 }
 
 .portfolio .portfolio-item-inner .image-container {
@@ -566,10 +573,11 @@ h3.my-profession {
 }
 
 .contact .contact-info-item {
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 50%;
+  max-width: 50%;
   text-align: center;
   margin-bottom: 4rem;
+  padding: 0 1rem;
 }
 
 .contact .contact-info-item .icon {
@@ -598,6 +606,7 @@ h3.my-profession {
 
 .contact .contact-form {
   color: var(--text-dark-900);
+  padding: 0 1rem;
 }
 
 .contact .contact-form .form-control {
