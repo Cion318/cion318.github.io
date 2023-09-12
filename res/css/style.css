@@ -231,6 +231,14 @@ nav .nav-toggler.open span::after {
   top: 0;
 }
 
+nav .navbar-nav .nav-item.active .nav-link {
+  color: var(--skin-color) !important;
+}
+
+nav .navbar-nav li a:hover {
+  color: var(--skin-color);
+}
+
 nav .navbar-social {
   position: absolute;
   top: 0.75rem;
